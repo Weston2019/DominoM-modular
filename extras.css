@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f4c3;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#match-history {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
