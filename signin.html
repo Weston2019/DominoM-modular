@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DominoM - Perfil</title>
+  <link rel="stylesheet" href="css/signin.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DominoM</h1>
+    <form id="signin-form">
+      <label for="username">Nombre:</label>
+      <input type="text" id="username" required />
+
+      <label for="room">Sala:</label>
+      <input type="text" id="room" required />
+
+      <label for="score">Puntaje objetivo:</label>
+      <select id="score">
+        <option value="70">70</option>
+        <option value="100">100</option>
+        <option value="50">50</option>
+        <option value="30">30</option>
+      </select>
+
+      <label for="language">Idioma:</label>
+      <select id="language">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+
+      <button type="submit">Entrar al Juego</button>
+    </form>
+  </div>
+
+  <script src="js/signin.js"></script>
+</body>
+</html>
