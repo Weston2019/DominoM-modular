@@ -1,15 +1,14 @@
-window.addEventListener('load', () => {
-  const history = JSON.parse(localStorage.getItem('matchHistory')) || [];
+// extras.js
+// 
+document.addEventListener('DOMContentLoaded', () => {
+  const stats = window.matchStats?.players || [];
+  const tbody = document.querySelector('.stats-table tbody');
+  tbody.innerHTML = '';
 
-  const container = document.getElementById('match-history');
-  if (history.length === 0) {
-    container.textContent = 'No hay partidas registradas aún.';
-    return;
-  }
-
-  history.forEach((match, index) => {
-    const div = document.createElement('div');
-    div.textContent = `Partida ${index + 1}: ${match}`;
-    container.appendChild(div);
+  stats.forEach(player => {
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${player.name}</td><td>${player.wins}</td><td>${player.losses}</td>`;
+    tbody.appendChild(row);
   });
 });
+

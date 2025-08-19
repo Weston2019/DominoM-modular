@@ -1,8 +1,8 @@
-document.getElementById('signin-form').addEventListener('submit', function (e) {
+document.getElementById('signin-form').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  const username = document.getElementById('username').value;
-  const room = document.getElementById('room').value;
+  const username = document.getElementById('username').value.trim();
+  const room = document.getElementById('room').value.trim();
   const score = document.getElementById('score').value;
   const language = document.getElementById('language').value;
 

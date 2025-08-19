@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DominoM - Extras</title>
-  <link rel="stylesheet" href="css/extras.css" />
+  <meta charset="UTF-8"> <!-- ✅ Correct placement -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ Correct placement -->
+  <title>Extras</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>📊 Historial de Partidas</h1>
-  <div id="match-history"></div>
+  <!-- Your content goes here -->
+  <h1>Match Stats</h1>
+  <table class="stats-table">
+    <thead>
+      <tr><th>Player</th><th>Wins</th><th>Losses</th></tr>
+    </thead>
+    <tbody>
+      <!-- Filled by JS -->
+    </tbody>
+  </table>
 
-  <button onclick="window.location.href='game.html'" class="back-button">⬅️ Volver al Juego</button>
-
-  <script src="js/extras.js"></script>
+  <script src="extras.js"></script>
 </body>
 </html>
